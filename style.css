@@ -1,36 +1,115 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .calculator {
-    width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #display {
-    width: calc(100% - 20px);
-    height: 50px;
-    margin-bottom: 10px;
-    font-size: 20px;
-    padding: 5px;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-  }
-  
-  button {
-    height: 50px;
-    font-size: 18px;
-  }
-  
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+body {
+  background-color: #444444;
+}
+
+.calculator {
+  width: 300px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #393939;
+}
+
+#display {
+  width: calc(100% - 10px);
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+h1 {
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 5px; */
+}
+
+input {
+  background-color: #a9b6a2;
+  border-radius: .5rem;
+  border: 3px solid #879281;
+}
+
+button {
+  height: 50px;
+  font-size: 23px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #4b4b4b;
+  box-shadow: 0px 4px 0px 0px #3f3f3f;
+  transition: .1s ease-in-out;
+  margin: 0 0 0 0;
+  transition: .05s ease-in-out;
+  border-radius: 100rem;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px #3f3f3f;
+  margin: 4px 0 -4px 0;
+}
+
+.das {
+  background-color: #f2888c;
+  box-shadow: 0px 4px 0px 0px #d47679;
+  margin: 0 0 0 0;
+  transition: .05s ease-in-out;
+  border-radius: 100rem;
+}
+
+.das:active {
+  box-shadow: 0px 0px 0px 0px #d47679;
+  margin: 4px 0 -4px 0;
+}
+
+.buttons:nth-child(1) {
+  width: 60%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttons:nth-child(2) {
+  width: 34%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  grid-gap: 10px;
+}
+
+.buttons:nth-child(2) button {
+  border-radius: .3rem;
+  height: 50px;
+}
+
+.buttons:nth-child(2) button:nth-child(4) {
+  background-color: #f2888c;
+  height: 110px;
+  box-shadow: 0px 4px 0px 0px #d47679;
+  margin: 0 0 0 0;
+  transition: .05s ease-in-out;
+}
+
+.buttons:nth-child(2) button:nth-child(4):active {
+  box-shadow: 0px 0px 0px 0px #d47679;
+  margin: 4px 0 -4px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
